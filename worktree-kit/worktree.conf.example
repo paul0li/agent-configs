@@ -1,0 +1,31 @@
+# .worktree.conf: settings for scripts/worktree.sh. Put it at the repo root and commit it.
+# It is a shell file that the script sources: KEY=value, with no spaces around the =.
+# Every key is optional; the defaults are noted next to each one.
+
+# Worktrees go next to the main checkout, as ../<WT_PREFIX>-<description>.
+# Default: the main checkout's folder name.
+WT_PREFIX=myproject
+
+# The branches work is promoted through, first to last. New working branches start from the
+# first one (and `sync` keeps them up with it). Default: "dev staging main".
+# A repo with a single branch can use WT_LADDER="main".
+WT_LADDER="dev staging main"
+
+# hotfix/* branches start from this branch instead. Default: the last rung of WT_LADDER.
+# Leave it empty (WT_HOTFIX_BASE=) to turn hotfix branches off.
+WT_HOTFIX_BASE=main
+
+# Branch types the script accepts, as <type>/<description>.
+WT_TYPES="feat fix chore refactor test ci docs experiment"
+
+# Host ports that shift per worktree, as VARIABLE:default. The main checkout keeps the defaults;
+# each new worktree gets default+N in its .env, with N the first slot where every port is free.
+# Leave it empty if the project runs no services.
+WT_PORTS="DB_PORT:5432 API_PORT:8000"
+
+# Extra variables that take the same value as a port above, as ALIAS=VARIABLE (space-separated),
+# e.g. for a URL that some tool reads under another name. Default: none.
+WT_PORT_ALIASES=""
+
+# Highest slot to try when shifting ports. Default: 99.
+WT_SLOT_MAX=99

@@ -11,6 +11,7 @@ My personal [Claude Code](https://claude.com/claude-code) configuration: reusabl
 | `commands/` | Slash commands: `aws`, `build-apk`, `changelog`, `commit`, `create-migration`, `create-mockup`, `deploy-app`, `update-readme`, `upload-mockups` |
 | `standards/` | Coding standards (e.g. `never-nester`) |
 | `designs/` | Reusable design docs / stack templates (e.g. `vite-vanilla-fastapi`) |
+| `worktree-kit/` | Reusable script for one git worktree per branch, with ports shifted per worktree (`worktree.sh` + example config) |
 
 ## Usage
 
