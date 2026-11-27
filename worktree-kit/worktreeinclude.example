@@ -1,0 +1,3 @@
+# .worktreeinclude: git-ignored files that scripts/worktree.sh copies from the main checkout into
+# each new worktree. One path per line, relative to the repo root; missing files are skipped.
+.env

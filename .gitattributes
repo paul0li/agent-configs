@@ -1,0 +1,4 @@
+# bash misreads CRLF: the scripts, and the config files the worktree script reads, always go
+# with LF, also on Windows with core.autocrlf=true.
+*.sh                    text eol=lf
+/worktree-kit/*.example text eol=lf
