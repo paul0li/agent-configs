@@ -6,9 +6,9 @@ My personal [Claude Code](https://claude.com/claude-code) configuration: reusabl
 
 | Dir | What's in it |
 |-----|--------------|
-| `skills/` | Skills (each a `SKILL.md`): `commit`, `create-admin-view`, `github-cli`, `grill-me` |
+| `skills/` | Skills (each a `SKILL.md`): `commit`, `create-admin-view`, `github-cli`, `grill-me`, `trello`, `trello-task` |
 | `agents/` | Subagents: `flutter-master`, `frontend-master`, `grammar-master`, `python-master` |
-| `commands/` | Slash commands: `aws`, `build-apk`, `changelog`, `commit`, `create-migration`, `create-mockup`, `deploy-app`, `trello-task`, `update-readme`, `upload-mockups` |
+| `commands/` | Slash commands: `aws`, `build-apk`, `changelog`, `commit`, `create-migration`, `create-mockup`, `deploy-app`, `update-readme`, `upload-mockups` |
 | `standards/` | Coding standards (e.g. `never-nester`) |
 | `designs/` | Reusable design docs / stack templates (e.g. `vite-vanilla-fastapi`) |
 
